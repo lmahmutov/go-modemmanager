@@ -187,7 +187,7 @@ func (tgp ThreeGppLacCiLocation) String() string {
 }
 
 type GpsRawLocation struct {
-	UtcTime   time.Time `json:"utc-time"`  // (Required) UTC time in ISO 8601 format, given as a string value (signature "s"). e.g. 203015.
+	UtcTime   time.Time `json:"utc"`  // (Required) UTC time in ISO 8601 format, given as a string value (signature "s"). e.g. 203015.
 	Latitude  float64   `json:"latitude"`  // (Required) Latitude in Decimal Degrees (positive numbers mean N quadrasphere, negative mean S quadrasphere), given as a double value (signature "d"). e.g. 38.889722, meaning 38d 53' 22" N.
 	Longitude float64   `json:"longitude"` // (Required) Longitude in Decimal Degrees (positive numbers mean E quadrasphere, negative mean W quadrasphere), given as a double value (signature "d"). e.g. -77.008889, meaning 77d 0' 32" W.
 	Altitude  float64   `json:"altitude"`  // (Optional) Altitude above sea level in meters, given as a double value (signature "d"). e.g. 33.5.
